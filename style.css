@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-weight: 300;
+}
+
+header ul a {
+  text-decoration: none;
+  color: #000;
+}
+
+header li {
+  transition: 0.5s;
+}
+
+header li:hover {
+  transform: translateY(-10px);
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  text-decoration: underline #9b76f9 7px;
+}
+
+.botao-contato {
+  font-weight: 600;
+  background-color: #9b76f9;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.home {
+  background-color: #f9f8f8;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home img {
+  width: 30rem;
+  max-width: 100%;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1400px;
+  align-items: center;
+  width: 100%;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.home-text h1 {
+  font-weight: 300;
+}
+
+.home-text p {
+  font-style: italic;
+}
+
+.home-text a {
+  margin-top: 4rem;
+  font-weight: 600;
+  background-color: #9b76f9;
+  color: #fff;
+  border-radius: 13px;
+  padding: 7px 20px;
+  text-decoration: none;
+}
+
+.sobre-nos {
+  margin-bottom: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-nos img {
+  width: 30rem;
+  max-width: 100%;
+}
+
+.sobre-nos-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.sobre-nos-container h2 {
+  font-weight: 210;
+  margin-left: 2.4rem;
+}
+
+.sobre-nos-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 45%;
+}
+
+.sobre-nos-text p {
+  text-align: justify;
+  font-weight: 230;
+}
+
+.sobre-nos-text h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.servicos {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.servicos-container {
+  background-color: #f9f8f8;
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.servicos img {
+  width: 30rem;
+  max-width: 100%;
+}
+
+.servicos h2 {
+  margin-right: 4rem;
+  font-weight: 200;
+  text-align: start;
+}
+
+.servicos-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.servicos-box p {
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  background-color: #9b76f9;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.box:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#icon {
+  width: 70px;
+  margin-left: 0.3rem;
+  margin-top: 0.2rem;
+}
+
+.depoimentos {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.depoimentos h2 {
+  font-weight: 200;
+  margin-left: 1.5rem;
+}
+
+.depoimentos-container {
+  overflow: hidden;
+  max-width: 1400px;
+  width: 100%;
+  padding: 7rem 0;
+  background-color: #d9d9d9;
+  text-align: center;
+}
+
+.depoimentos-text h3 {
+  font-weight: 300;
+}
+
+.depoimentos-text p {
+  font-weight: 200;
+  font-style: italic;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  text-align: justify;
+  border-radius: 10px;
+  width: 500px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+.card-slide {
+  display: inline-flex;
+  gap: 40px;
+  margin-top: 2rem;
+  animation: 40s infinite slide linear;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  font-style: italic;
+}
+
+.contato {
+  display: flex;
+  justify-content: center;
+}
+
+.contato img {
+  width: 32rem;
+  max-width: 100%;
+}
+
+.contato-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.contato-formulario {
+  background-color: #9b76f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  height: 400px;
+  width: 450px;
+}
+
+.contato-formulario input {
+  border: none;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.contato-formulario input[type="button"] {
+  padding: 0.7rem 2.5rem;
+}
+
+.contato-formulario h2 {
+  font-size: 28px;
+  color: #fff;
+}
+
+footer {
+  background-color: #9b76f9;
+  color: #fff;
+  text-align: center;
+  font-size: 9px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-5000px);
+  }
+}
+
+/*Para Tablets*/
+@media screen and (max-width: 1279px) {
+  header ul {
+    display: none;
+  }
+
+  .img-svg {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+    .logo{
+        transform: scale(0.7);
+    }
+  
+    .home {
+    padding: 5rem;
+    text-align: center;
+  }
+
+  .img-svg {
+    display: none;
+  }
+
+  .sobre-nos-container {
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .sobre-nos-container h2 {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+  }
+
+  .servicos-container {
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .servicos h2 {
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    transform: scale(0.8);
+  }
+  
+  .contato-formulario {
+    transform: scale(0.8);
+  }
+  
+  footer {
+    font-size: 10px;
+  }
+
+}
