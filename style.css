@@ -21,33 +21,36 @@ header {
   margin: 2rem;
 }
 
-header ul {
+.lista__menu {
   display: flex;
   list-style: none;
   gap: 2rem;
   font-weight: 300;
 }
 
-header ul a {
+.item__menu a {
   text-decoration: none;
   color: #000;
 }
 
-header li {
+.item__menu {
   transition: 0.5s;
 }
 
-header li:hover {
+.item__menu:hover {
   transform: translateY(-10px);
 }
 
+.img-svg {
+  width: 30rem;
+}
 .logo {
   display: flex;
   flex-direction: row;
   text-decoration: underline #9b76f9 7px;
 }
 
-.botao-contato {
+.botao {
   font-weight: 600;
   background-color: #9b76f9;
   color: #fff;
@@ -63,11 +66,6 @@ header li:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.home img {
-  width: 30rem;
-  max-width: 100%;
 }
 
 .home-container {
@@ -107,11 +105,6 @@ header li:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.sobre-nos img {
-  width: 30rem;
-  max-width: 100%;
 }
 
 .sobre-nos-container {
@@ -162,11 +155,6 @@ header li:hover {
   width: 100%;
 }
 
-.servicos img {
-  width: 30rem;
-  max-width: 100%;
-}
-
 .servicos h2 {
   margin-right: 4rem;
   font-weight: 200;
@@ -184,7 +172,7 @@ header li:hover {
   font-weight: 200;
 }
 
-.box {
+.box__servicos {
   width: 80px;
   height: 80px;
   background-color: #9b76f9;
@@ -192,12 +180,12 @@ header li:hover {
   transition: 0.4s;
 }
 
-.box:hover {
+.box__servicos:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
 
-#icon {
+.icon-servicos {
   width: 70px;
   margin-left: 0.3rem;
   margin-top: 0.2rem;
@@ -332,11 +320,16 @@ footer {
 }
 
 @media screen and (max-width: 990px) {
-    .logo{
-        transform: scale(0.7);
-    }
-  
-    .home {
+  .logo {
+    transform: scale(0.7);
+  }
+
+  .lista__menu {
+    display: none;
+  }
+
+
+  .home {
     padding: 5rem;
     text-align: center;
   }
@@ -371,13 +364,12 @@ footer {
   .card {
     transform: scale(0.8);
   }
-  
+
   .contato-formulario {
     transform: scale(0.8);
   }
-  
+
   footer {
     font-size: 10px;
   }
-
 }

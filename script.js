@@ -1,9 +1,9 @@
-const boxes = document.getElementsByClassName('box');
+const boxes = document.getElementsByClassName('box__servicos');
 
 
 for (let box of boxes) {
     box.addEventListener('click', () => {
-        const text = document.getElementById("servicos-text");
+        const text = document.getElementById("servicos__text");
         text.style.fontSize = "18px"
         text.style.fontStyle = "italic"
         if(box == boxes[0]) {
