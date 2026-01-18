@@ -4,30 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Criativa Web</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
   </head>
 
   <body>
-    <header>
-      <div class="logo">
+    <!--Cabeçalho-->
+    <header class="header">
+      <div class="header__logo">
         <img src="/img/paint-roller-svgrepo-com.svg" alt="" />
         <h1>Criativa Web</h1>
       </div>
-      <nav>
-        <ul class="lista__menu">
-          <li class="item__menu"><a href="#sobre-nos">Sobre Nós</a></li>
-          <li class="item__menu"><a href="#servicos">Serviços</a></li>
-          <li class="item__menu"><a href="#depoimentos">Depoimentos</a></li>
+      <nav class="nav">
+        <ul class="lista">
+          <li class="lista__item"><a href="#sobre-nos">Sobre Nós</a></li>
+          <li class="lista__item"><a href="#servicos">Serviços</a></li>
+          <li class="lista__item"><a href="#depoimentos">Depoimentos</a></li>
         </ul>
       </nav>
       <div>
         <a href="#contato" class="botao botao__contato">Contato</a>
       </div>
     </header>
-
+    <!--Home Page-->
     <section class="home" id="home">
-      <div class="home-container">
-        <div class="home-text">
+      <div class="home__container">
+        <div class="home__text">
           <h1>
             Nós somos a <br />
             Agencia Criativa Web
@@ -45,13 +46,14 @@
         </div>
       </div>
     </section>
-    <section class="sobre-nos" id="sobre-nos">
-      <div class="sobre-nos-container">
+    <!--Sobre Nós-->
+    <section class="sobre__nos" id="sobre-nos">
+      <div class="sobre__nos__container">
         <div>
           <h2>Sobre Nós</h2>
           <img src="img/Designer-cuate.svg" class="img-svg" alt="" />
         </div>
-        <div class="sobre-nos-text">
+        <div class="sobre__nos__text">
           <h3>Quem nós somos?</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius
@@ -72,14 +74,15 @@
         </div>
       </div>
     </section>
+    <!--Serviços-->
     <section class="servicos" id="servicos">
       <div>
-        <h2>Serviços</h2>
+        <h2 class="servicos__h2">Serviços</h2>
       </div>
         
-      <div class="servicos-container">
-        <div class="servicos-box">
-          <div class="box__servicos">
+      <div class="servicos__container">
+        <div class="container__box">
+          <div class="container__card">
             <img
             class="icon__servicos"
               id="icon"
@@ -87,7 +90,7 @@
               alt="web image"
             />
           </div>
-          <div class="box__servicos">
+          <div class="container__card">
             <img
             class="icon__servicos"
               src="img/icons/paint-svgrepo-com.svg"
@@ -95,7 +98,7 @@
               id="icon"
             />
           </div>
-          <div class="box__servicos">
+          <div class="container__card">
             <img
             class="icon__servicos"
               src="img/icons/paint-8-svgrepo-com.svg"
@@ -103,7 +106,7 @@
               id="icon"
             />
           </div>
-          <div class="box__servicos">
+          <div class="container__card">
             <img
             class="icon__servicos"
               src="img/icons/paint-mark-1-svgrepo-com.svg"
@@ -120,10 +123,11 @@
         </div>
       </div>
     </section>
+    <!--Depoimentos-->
     <section class="depoimentos" id="depoimentos">
       <h2>Depoimentos</h2>
-      <div class="depoimentos-container">
-        <div class="depoimentos-text">
+      <div class="depoimentos__container">
+        <div class="depoimentos__text">
           <h3>Quer saber mais sobre a gente?</h3>
           <p>Os depoimentos de quem teve contato com a nossa agencia</p>
         </div>
@@ -450,11 +454,11 @@
       </div>
     </section>
     <section class="contato" id="contato">
-      <div class="contato-container">
+      <div class="contato__container">
         <div>
           <img src="img/Mobile user-amico.svg" class="img-svg" alt="" />
         </div>
-        <form class="contato-formulario" action="">
+        <form class="contato__formulario" action="">
           <h2>Entre em contato</h2>
 
           <div>

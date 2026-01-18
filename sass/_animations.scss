@@ -1,0 +1,11 @@
+$slide:40s infinite slide linear;
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-5000px);
+    }
+}

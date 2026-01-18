@@ -1,0 +1,12 @@
+@use 'variaveis';
+
+
+.botao {
+    font-weight: 600;
+    background-color: variaveis.$cor-primaria;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}

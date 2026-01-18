@@ -1,0 +1,73 @@
+@use 'variaveis';
+@use 'bases';
+@use 'componentes';
+@use 'layout';
+@use 'mixins';
+@use 'animations';
+
+
+
+/*Para Tablets*/
+@media screen and (max-width: 1279px) {
+    header ul {
+        display: none;
+    }
+
+    .img-svg {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .logo {
+        transform: scale(0.7);
+    }
+
+    .lista__menu {
+        display: none;
+    }
+
+
+    .home {
+        padding: 5rem;
+        text-align: center;
+    }
+
+    .img-svg {
+        display: none;
+    }
+
+    .sobre-nos-container {
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+
+        h2 {
+            font-size: 2.1rem;
+            margin-bottom: 1rem;
+            margin-right: 2rem;
+        }
+    }
+
+    .servicos-container {
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+
+         h2 {
+        margin-left: 4rem;
+        margin-bottom: 1rem;
+    }
+    }
+    .card {
+        transform: scale(0.8);
+    }
+
+    .contato-formulario {
+        transform: scale(0.8);
+    }
+
+    footer {
+        font-size: 10px
+    }
+}

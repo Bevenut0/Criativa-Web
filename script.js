@@ -1,4 +1,4 @@
-const boxes = document.getElementsByClassName('box__servicos');
+const boxes = document.getElementsByClassName('container__card');
 
 
 for (let box of boxes) {
